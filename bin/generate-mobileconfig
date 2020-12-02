@@ -103,8 +103,18 @@ cat <<EOF
                     <key>OnDemandRules</key>
                     <array>
                         <dict>
+                            <key>InterfaceTypeMatch</key>
+                            <string>WiFi</string>
+                            <key>SSIDMatch</key>
+                            <array>
+                              <string>Tenda_57D7B0_5G</string>
+                            </array>
                             <key>Action</key>
-                            <string>Connect</string>
+                            <string>Disconnect</string>
+                        </dict>
+                        <dict>
+                          <key>Action</key>
+                          <string>Connect</string>
                         </dict>
                     </array>
                     <!-- The server is authenticated using a certificate -->
