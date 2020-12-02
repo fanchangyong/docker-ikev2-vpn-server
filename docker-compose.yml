@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  ikev2-vpn-server:
+    build: .
+    image: ikev2-vpn-server
+    privileged: true
+    ports:
+      - 500:500/udp
+      - 4500:4500/udp
+
