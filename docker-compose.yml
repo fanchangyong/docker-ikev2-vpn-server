@@ -5,6 +5,7 @@ services:
     build: .
     image: ikev2-vpn-server
     container_name: ikev2-vpn-server
+    restart: always
     privileged: true
     ports:
       - 500:500/udp
